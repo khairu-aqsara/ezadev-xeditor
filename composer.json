@@ -1,0 +1,33 @@
+{
+    "name": "ezadev/xeditor",
+    "description": "Text Editor untuk Ezadev Admin",
+    "type": "library",
+    "keywords": ["ezadev-admin", "extension"],
+    "homepage": "https://github.com/khairu-aqsara/ezadev-xeditor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khairu Aqsara",
+            "email": "khairu.aqsara@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "ezadev/admin": "~0.5.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ezadev\\Xeditor\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ezadev\\Xeditor\\XeditorServiceProvider"
+            ]
+        }
+    }
+}
