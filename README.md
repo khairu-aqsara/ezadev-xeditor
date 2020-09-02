@@ -34,7 +34,14 @@ In the `extensions` section of the `config/admin.php` file, add some configurati
 
 Use it in the form:
 ```php
-$form->xeditor('content')->set_mode('full|lite|custom')->set_toolbar(['bold','underline']);
+$form->xeditor('content')->set_mode('full|lite');
+```
+
+for custom Toolbar:
+
+```php
+$form->xeditor('content')->set_mode('custom')
+    ->set_toolbar(['bold','underline']);
 ```
 
 for custom toolbar please refer to the https://summernote.org/deep-dive/ 
