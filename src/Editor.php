@@ -11,7 +11,8 @@ class Editor extends Field
     protected $mode = "full";
     public $toolbar = [];
     protected $feature_mode = [
-            'lite'=>['bold','italic','underline','strikethrough','ol','ul','paragraph','hr','clear']
+            'lite'=>['bold','italic','underline','strikethrough','ol','ul','paragraph','hr','clear'],
+            'full'=>['style','fontname','fontsize','color','bold','italic','underline','strikethrough','superscript','subscript','clear','ol','ul','paragraph','height','picture','link','video','table','hr','fullscreen','codeview','undo','redo']
         ];
 
     protected static $css = [
